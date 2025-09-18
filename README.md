@@ -74,21 +74,17 @@ Frontend (Next.js + React + TypeScript)
 git clone https://github.com/Ark-Alvarenga/apostai-app.git
 cd apostai-app
 2. Install dependencies
-bash
-Copiar código
+
 npm install
+
 3. Add environment variables
+
 Create a .env.local file with:
 
-env
-Copiar código
-NEXT_PUBLIC_API_URL=<your_api_url>
-NEXT_PUBLIC_CHATGPT_KEY=<your_openai_api_key>
-NEXT_PUBLIC_DEEPSEEK_KEY=<your_deepseek_api_key>
-NEXT_PUBLIC_SPORTS_API_KEY=<your_sports_api_key>
+env.example as guideline
+
 4. Run the development server
-bash
-Copiar código
+
 npm run dev
 
 📚 Learnings & Takeaways
