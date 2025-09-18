@@ -1,0 +1,61 @@
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificação de Email ApostAí</title>
+    <style>
+      body { font-family: Nunito, Arial, sans-serif; background-color: #020617;
+      margin: 0; padding: 0; color: #fff; } .email-container { max-width: 600px;
+      margin: 0 auto; background: #15191C; border-radius: 8px; box-shadow: 0 4px
+      6px rgba(0, 0, 0, 0.1); overflow: hidden; border: 1px solid #080A0D; }
+      .header { padding: 20px; text-align: center; background: #080A0D; }
+      .header img { max-width: 150px; } .content { padding: 20px; color:
+      #3B3F44; } .content h1 { font-size: 24px; margin-bottom: 20px; color:
+      #00FF6A; } .content p { font-size: 16px; line-height: 1.5; margin-bottom:
+      0px; color: #fff; } .cta-button { display: inline-block; padding: 12px
+      20px; font-size: 16px; background-color: #00FF6A; color: #ffffff
+      !important; text-decoration: none; border-radius: 4px; text-align: center;
+      margin-top: 20px; border: none; width: -webkit-fill-available}
+      .cta-button:hover { background-color: #ea580c; } .footer { padding: 10px
+      20px; text-align: center; font-size: 14px; color: #fff; background:
+      #080A0D; } .footer p { text-decoration: none; margin-bottom: 0; } .footer
+      i { font-size: 8px; line-height: 1.5; margin-bottom: 20px; color: #888686
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="email-container">
+      <!-- Header -->
+      <div class="header">
+        <img
+          src="https://5wvwovedddgospx8.public.blob.vercel-storage.com/final-test-KIBaRcdzZuwUY4V112KFgCte9JX2cJ.png"
+          alt="ApostAí Logo"
+        />
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <h1>Verifique Seu Email</h1>
+        <p>
+          Clique no botão abaixo para verificar seu e-mail e concluir seu
+          processo de registro.
+        </p>
+        <a href="{{verificationUrl}}" class="cta-button">Verificar meu Email</a>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>
+          Se você não solicitou este e-mail, ignore-o.
+        </p>
+        <i>
+          Email enviado em
+          {{emailDate}}
+        </i>
+      </div>
+    </div>
+  </body>
+
+</html>

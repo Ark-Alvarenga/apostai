@@ -1,0 +1,1 @@
+export const EMAIL_INPUT_ID = "ODIN_FORGE_EMAIL_INPUT_ID";

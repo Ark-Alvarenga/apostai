@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --green: #00ff6a;
+  --blue: #00bfff;
+  --goldYellow: #ffd700;
+  --white: #e0e0e0;
+  --red: #ff3b3b;
+  --darkBlue: #1f4b99;
+  --black: #121212;
+  --darkGray: #1e1e1e;
+  --gray: #2c2c2c;
+}
+
+*,
+input,
+textarea {
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --green: #00ff6a;
+    --blue: #00bfff;
+    --goldYellow: #ffd700;
+    --white: #e0e0e0;
+    --red: #ff3b3b;
+    --darkBlue: #1f4b99;
+    --black: #121212;
+    --darkGray: #1e1e1e;
+    --gray: #2c2c2c;
+  }
+}
+
+body {
+  scroll-behavior: smooth;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-nunito), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  /* Estilização Global do Scroll */
+  ::-webkit-scrollbar {
+    width: 6px; /* Largura da barra de rolagem */
+    height: 10px; /* Altura da barra de rolagem horizontal */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #4b5563; /* Cor do "polegar" */
+    border-radius: 8px; /* Arredondamento das bordas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra leve */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #9ca3af; /* Cor ao passar o mouse */
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Cor do trilho */
+  }
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for all devices */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: for non-WebKit browsers */
+.scrollbar-hide {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+
+.square-scroll::-webkit-scrollbar {
+  @apply w-2;
+}
+
+.square-scroll::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+/* .square-scroll::-webkit-scrollbar-thumb {
+  @apply bg-background-medium-500 nao existe essa cor
+} */
