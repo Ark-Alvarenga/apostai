@@ -1,7 +1,7 @@
 ## Getting Started
+
 Deploy v0.19
 First, run the development server:
-
 
 ```bash
 npm run dev
@@ -15,28 +15,97 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 🎲 Apostaí.app — Sports Betting & AI Insights Platform
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)](https://react.dev/)  
+[![Next.js](https://img.shields.io/badge/Framework-Next.js-black?logo=next.js)](https://nextjs.org/)  
+[![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178C6?logo=typescript)](https://www.typescriptlang.org/)  
+[![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?logo=node.js)](https://nodejs.org/)  
+[![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248?logo=mongodb)](https://www.mongodb.com/)  
+[![AWS](https://img.shields.io/badge/Cloud-AWS-FF9900?logo=amazon-aws)](https://aws.amazon.com/)  
+[![Docker](https://img.shields.io/badge/DevOps-Docker-2496ED?logo=docker)](https://www.docker.com/)  
+[![OpenAI](https://img.shields.io/badge/AI-ChatGPT-412991?logo=openai)](https://platform.openai.com/)  
+[![DeepSeek](https://img.shields.io/badge/AI-DeepSeek-orange)](#)
 
-## Learn More
+Apostaí.app is a **sports betting and analytics platform** built with **React, Next.js, and TypeScript**, integrating **AI-powered insights** from ChatGPT and DeepSeek.  
+The project combines **real-time sports data**, **secure authentication**, and **LLM-based analysis**, delivering a modern and scalable betting experience.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend:** React, Next.js (App Router), TypeScript, Context API, CSS
+- **Backend & APIs:** Node.js, REST APIs, JWT Authentication, Sports Data API
+- **AI Integration:** ChatGPT API, DeepSeek API, LLM-based Agents
+- **Database & Cloud:** MongoDB, Firebase, AWS, Docker
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔑 Key Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ✅ **User Authentication** with email verification, JWT tokens, and persistent sessions via Context API
+- ✅ **Sports Data Integration** (live scores, odds, game stats)
+- ✅ **AI-Powered Analysis** with ChatGPT & DeepSeek for betting recommendations
+- ✅ **Scalable Frontend Architecture** using Next.js and modular React components
+- ✅ **Secure API Communication** with token-based requests
 
-## QUANDO FINALIZAR
-Rodar: https://www.npmjs.com/package/next-sitemap para pegar o site map
-Ver o https://www.npmjs.com/package/@axe-core/react para testar acessibilidade
-Fazer um JSON-LD com schema.org (ver talvez sobre next seo https://github.com/garmeeh/next-seo )
-pra ver o tamanho do bundle: https://www.npmjs.com/package/@next/bundle-analyzer
-Rede sociais: https://www.npmjs.com/package/next-share
+---
+
+## 🛠️ Project Architecture
+
+Frontend (Next.js + React + TypeScript)
+│
+├── Context API (Auth & State Management)
+│
+├── API Layer
+│ ├── Sports Data API
+│ ├── AI Insights API (ChatGPT + DeepSeek)
+│ └── User Authentication (JWT)
+│
+└── Cloud & DB
+├── MongoDB / Firebase
+└── AWS + Docker
+
+## ⚡ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Ark-Alvarenga/apostai-app.git
+cd apostai-app
+2. Install dependencies
+bash
+Copiar código
+npm install
+3. Add environment variables
+Create a .env.local file with:
+
+env
+Copiar código
+NEXT_PUBLIC_API_URL=<your_api_url>
+NEXT_PUBLIC_CHATGPT_KEY=<your_openai_api_key>
+NEXT_PUBLIC_DEEPSEEK_KEY=<your_deepseek_api_key>
+NEXT_PUBLIC_SPORTS_API_KEY=<your_sports_api_key>
+4. Run the development server
+bash
+Copiar código
+npm run dev
+
+📚 Learnings & Takeaways
+Implemented secure authentication flows with Context API + JWT.
+
+Gained hands-on experience with AI agents and LLM integration in real-world applications.
+
+Improved skills in scalable React/Next.js architecture.
+
+Learned best practices for API orchestration (Sports data + AI insights).
+
+🔮 Next Steps
+ Improve UI/UX with animations & real-time updates
+
+ Expand AI analysis with multiple models/agents
+
+ Add betting history & personalized dashboards
+
+ Explore Web3 integration for decentralized betting
+```
